@@ -1,0 +1,32 @@
+РАСКЛАДКА: {"vw":440,"dpr":3,"containerRight":426,"linkAlign":"center","linkPad":"12px 14px","logo":{"x":14,"w":271,"right":285},"actions":{"x":338,"w":88,"right":426},"theme":{"x":338,"w":40,"right":378},"burger":{"x":386,"w":40,"right":426}}
+  -> ЗАЗОР справа (containerRight - actions.right) = 0 px  [0 = прижато вправо]
+  -> зазор logo->actions = 53 px | текст меню: center 12px 14px
+ИНТЕРАКТИВ: тема dark -> light | меню было открыто: true | после клика по ссылке: {"open":false,"vis":"hidden","cls":"nav nav--js nav--closed"}
+
+=== цель scrollY=0 | фактически 913 | header.scrolled=false ===
+  база A (закр): mean= 67.9 sd=   44  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+  база B (закр): mean= 67.8 sd= 43.9  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+  открытие #1  : mean= 70.8 sd= 19.7  vis=visible op=1   inline=visible/1     anim=navDrop  blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+  закрыто A    : mean= 64.6 sd= 44.8  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+  закрыто B    : mean= 62.3 sd= 45.5  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+  открытие #2  : mean= 68.2 sd= 21.7  vis=visible op=1   inline=visible/1     anim=navDrop  blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+  закрыто      : mean= 62.8 sd= 45.5  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=913  header.scrolled=true  header.backdropFilter=none
+
+=== цель scrollY=400 | фактически 400 | header.scrolled=true ===
+  база A (закр): mean=   89 sd= 70.3  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=400  header.scrolled=true  header.backdropFilter=none
+  база B (закр): mean= 92.9 sd= 70.4  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=400  header.scrolled=true  header.backdropFilter=none
+  открытие #1  : mean= 80.4 sd= 23.3  vis=visible op=1   inline=visible/1     anim=navDrop  blur=blur(30px) saturate(1.5)
+        scrollY=400  header.scrolled=true  header.backdropFilter=none
+  закрыто A    : mean= 89.5 sd= 71.8  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=400  header.scrolled=true  header.backdropFilter=none
+  закрыто B    : mean= 86.1 sd= 72.2  vis=hidden  op=0   inline=hidden/0      anim=none     blur=blur(30px) saturate(1.5)
+        scrollY=400  header.scrolled=true  header.backdropFilter=none
