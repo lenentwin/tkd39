@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="taekwondo" data-scheme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self'; img-src 'self' data:; connect-src 'self' https:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b1020">
+  <title>Возврат после входа — MFT39</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/auth.css">
+  <script src="../assets/js/auth-config.js" defer></script>
+  <script src="../assets/js/auth.js" defer></script>
+</head>
+<body class="auth-page" data-auth-page="callback" data-auth-state="unconfigured">
+  <header class="auth-header">
+    <div class="container">
+      <a class="auth-brand" href="../index.html"><span class="auth-brand__mark" aria-hidden="true"></span>MFT39</a>
+      <a class="auth-back" href="../index.html">На сайт секции</a>
+    </div>
+  </header>
+  <main class="auth-main" id="main">
+    <div class="container auth-layout">
+      <div class="auth-intro">
+        <div class="auth-intro__rule" aria-hidden="true"></div>
+        <h1>Проверяем<br>ваш вход.</h1>
+        <p>Результат входа подтверждается сервисом авторизации. Эта страница проверяет состояние сессии.</p>
+      </div>
+      <section class="glass auth-card" aria-labelledby="auth-title" aria-busy="false">
+        <div class="auth-status-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></div>
+        <div role="status" aria-live="polite" aria-atomic="true">
+          <h2 id="auth-title">Авторизация ещё не настроена</h2>
+          <p id="auth-description">Вход пока недоступен. Пожалуйста, попробуйте позже.</p>
+        </div>
+        <div class="auth-actions">
+          <button class="auth-button auth-button--vk" id="auth-login" type="button" disabled><span class="auth-vk-mark" aria-hidden="true">VK</span>Войти через VK ID</button>
+          <a class="auth-button auth-button--quiet" id="auth-account" href="account.html" hidden>Открыть личный кабинет</a>
+          <button class="auth-button auth-button--quiet" id="auth-retry" type="button" hidden>Проверить ещё раз</button>
+          <button class="auth-button auth-button--quiet" id="auth-logout" type="button" hidden>Выйти из аккаунта</button>
+        </div>
+        <p class="auth-hint">Используйте свой аккаунт VK ID. Пароль от VK вводится только на стороне VK.</p>
+        <noscript><p>Для проверки входа включите JavaScript. Авторизация на этой странице сейчас недоступна.</p></noscript>
+      </section>
+    </div>
+  </main>
+  <footer class="auth-footer"><div class="container"><span>Центр развития тхэквондо МФТ</span><a href="../index.html#contact">Связаться с секцией</a></div></footer>
+</body>
+</html>

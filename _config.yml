@@ -1,0 +1,23 @@
+# Preserve branch-based GitHub Pages; publish only the static website.
+# Server source is public in GitHub but excluded from the Pages artifact.
+exclude:
+  - backend
+  - tools
+  - node_modules
+  - vendor
+  - test-results
+  - playwright-report
+  - dist
+  - build
+  - coverage
+  - .githooks
+  - .github
+  - .local
+  - private
+  - docs-private
+  - data
+  - backups
+  - exports
+  - uploads
+  - Gemfile
+  - Gemfile.lock
